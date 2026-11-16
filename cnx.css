@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf0ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 650px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+
+/* Image à gauche */
+.image-section {
+    width: 50%;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Formulaire à droite */
+.login-section {
+    width: 50%;
+    padding: 55px 45px;
+    text-align: center;
+}
+
+h1 {
+    color: #123c69;
+    font-size: 40px;
+}
+
+.slogan {
+    color: #123c69;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+h2 {
+    color: #123c69;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-section > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+form {
+    text-align: left;
+}
+
+form > label {
+    display: block;
+    margin-bottom: 8px;
+    color: #123c69;
+    font-weight: bold;
+}
+
+form > input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.options a, .register a {
+    color: #0754c7;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #092f65;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17569b;
+}
+
+.register {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Adaptation téléphone */
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        width: 100%;
+        height: 250px;
+    }
+
+    .login-section {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    background-image: url("images/banque.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}

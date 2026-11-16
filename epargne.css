@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    color: #333;
+}
+
+header {
+    background: #102b50;
+    color: white;
+    padding: 25px 40px;
+}
+
+header h1 {
+    color: #e83eaa;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+main {
+    padding: 35px;
+}
+
+main > h2 {
+    color: #102b50;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #e83eaa;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+.card h3 {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #102b50;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.operation, .operations {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+section h2 {
+    color: #102b50;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 450px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    background: #102b50;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #e83eaa;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+}
+
+th {
+    background: #102b50;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 13px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #fcecf6;
+}
+
+.credit {
+    color: green;
+    font-weight: bold;
+}
+
+.debit {
+    color: red;
+    font-weight: bold;
+}
+
+#message {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+}
+
+ 
+ 

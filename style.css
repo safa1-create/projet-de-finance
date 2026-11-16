@@ -1,0 +1,151 @@
+
+/* ===== 1. STYLE GENERAL ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color white;
+    color: #333;
+}
+
+
+/* ===== 2. HEADER ===== */
+
+header {
+    background: linear-gradient(135deg, #102a43, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+    color: #dcecff;
+}
+
+
+/* ===== 3. PARTIE PRINCIPALE ===== */
+
+main {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+main h2 {
+    font-size: 30px;
+    color: #102a43;
+    margin-bottom: 15px;
+}
+
+main > p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+/* ===== 4. CARTES DES SERVICES ===== */
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.services button {
+    background-color: white;
+    width: 280px;
+    min-height: 190px;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.services button h3 {
+    color: #1976d2;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.services button p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ===== 5. EFFET AU PASSAGE DE LA SOURIS ===== */
+
+.services button:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(25, 118, 210, 0.2);
+    background-color: #fafdff;
+}
+
+
+/* ===== 6. FOOTER ===== */
+
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+/* ===== 7. ADAPTATION AUX TELEPHONES ===== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    main {
+        padding: 40px 15px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services button {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+
+    background-image: url("images/fond.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+}
+ 
